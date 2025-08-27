@@ -4,7 +4,7 @@ import pickle
 from tensorflow.keras import models
 
 # Load trained model and preprocessor
-model = models.load_model('churn_model.keras' , compile=False)
+model = models.load_model('churn_model.h5' , compile=False)
 preproc = pickle.load(open('preprocessor.pkl', 'rb'))
 
 st.title("Customer Churn Prediction")
